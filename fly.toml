@@ -1,0 +1,28 @@
+# fly.toml app configuration file generated for the-scheming-admin on 2024-04-02T18:06:53-04:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'the-scheming-admin'
+primary_region = 'iad'
+
+[build]
+
+[env]
+  PORT = "8080"
+  SHOPIFY_APP_URL = "https://the-scheming-admin.fly.dev"
+  SHOPIFY_API_KEY = "f1f831fc3386cc8599747bfbd11b2226"
+  SCOPES = "read_customers,read_all_orders,read_assigned_fulfillment_orders,read_content,read_discounts,read_fulfillments,read_metaobject_definitions,read_metaobjects,read_orders,read_products,read_third_party_fulfillment_orders,write_assigned_fulfillment_orders,write_content,write_discounts,write_fulfillments,write_metaobject_definitions,write_metaobjects,write_orders,write_products,write_third_party_fulfillment_orders"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ['app']
+
+[[vm]]
+  memory = '1gb'
+  cpu_kind = 'shared'
+  cpus = 1

@@ -1,0 +1,14 @@
+[[extensions]]
+name = "New order placed"
+type = "flow_trigger"
+handle = "new-order-placed"
+description = "1. Calculate packaging date; 2. Generate shipping label via UPS"
+
+[settings]
+
+  [[settings.fields]]
+  type = "order_reference"
+
+  [[settings.fields]]
+  type = "single_line_text_field"
+  key = "Packaging date"

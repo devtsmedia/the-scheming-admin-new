@@ -1,0 +1,7 @@
+[[extensions]]
+name = "Define new metafields"
+type = "flow_trigger"
+handle = "define-new-metafields"
+description = "Trigger that activates workflow to define new metafields upon app installation by new store"
+
+[settings]

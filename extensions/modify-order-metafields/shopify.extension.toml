@@ -1,0 +1,10 @@
+[[extensions]]
+name = "Modify order metafields"
+type = "flow_trigger"
+handle = "modify-order-metafields"
+description = "Your description"
+
+[settings]
+
+  [[settings.fields]]
+  type = "order_reference"

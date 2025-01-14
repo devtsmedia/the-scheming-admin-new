@@ -1,0 +1,7 @@
+[[extensions]]
+name = "New store linked"
+type = "flow_trigger"
+handle = "new-store-linked"
+description = "New store downloads app: define new metafields; add metafield values"
+
+[settings]

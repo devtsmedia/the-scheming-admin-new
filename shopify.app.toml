@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "f1f831fc3386cc8599747bfbd11b2226"
+name = "Admin-Dashboard"
+handle = "admin-dashboard-8"
+application_url = "https://the-scheming-admin.fly.dev"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "asdfghjkl1234567890sdfdaw.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_all_orders,read_assigned_fulfillment_orders,read_content,read_customers,read_discounts,read_fulfillments,read_metaobject_definitions,read_metaobjects,read_orders,read_products,read_third_party_fulfillment_orders,write_assigned_fulfillment_orders,write_content,write_discounts,write_fulfillments,write_metaobject_definitions,write_metaobjects,write_orders,write_products,write_third_party_fulfillment_orders"
+
+[auth]
+redirect_urls = [
+  "https://the-scheming-admin.fly.dev/auth/callback",
+  "https://the-scheming-admin.fly.dev/auth/shopify/callback",
+  "https://the-scheming-admin.fly.dev/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false

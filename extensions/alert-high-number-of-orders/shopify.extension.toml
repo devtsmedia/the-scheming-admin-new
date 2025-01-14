@@ -1,0 +1,11 @@
+[[extensions]]
+name = "Alert high number of orders"
+type = "flow_trigger"
+handle = "alert-high-number-of-orders"
+description = "Your description"
+
+[settings]
+
+  [[settings.fields]]
+  type = "single_line_text_field"
+  key = "NumOrders"
